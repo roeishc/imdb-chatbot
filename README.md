@@ -1,6 +1,10 @@
 Spring app exposing API to get a short summary about a movie from IMDB, using their API and web scraping.<br><br>
-Work in progress, the next step is integrating with DialogFlow to allow chatting with a bot for the summary.<br><br>
-For now, you can run this locally and access the Swagger UI and the API via port 8080, with context path /bot.<br>
-http://localhost:8080/swagger-ui.html <br><br>
-Swagger:<br><br>
-![image](https://github.com/roeishc/imdb-chatbot/assets/95538414/bf088691-e259-496a-8bfc-8893f4382d0d)
+Integrated with DialogFlow using webhooks. You can chat with the bot [here](https://bot.dialogflow.com/eb93102d-6653-4377-bdfb-2b03712d08d9).<br>
+<br>
+<p align="center"><img src="https://github.com/roeishc/imdb-chatbot/assets/95538414/d4d71900-ad2b-4948-a93e-4dcefb64063f" height=500 class="center"></p>
+<br>
+<a href="https://imdb-chatbot.runmydocker-app.com/swagger-ui.html">Swagger UI</a>:
+<br><br>
+<img src="https://github.com/roeishc/imdb-chatbot/assets/95538414/bf088691-e259-496a-8bfc-8893f4382d0d">
+<br>
+(The post request requires DialogFlow's POST request format, and is used by the chat when a user chats with it)

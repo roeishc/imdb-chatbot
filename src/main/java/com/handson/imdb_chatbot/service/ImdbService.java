@@ -20,13 +20,12 @@ public class ImdbService {
 
     public static final Pattern MOVIE_PATTERN = Pattern.compile("</script><title>([^<]+)</title><meta name=\"description\" content=\"([^\"]+).*\"aggregateRating\":\\{\"@type\":\"AggregateRating\",\"ratingCount\":([0-9]+).*\"ratingValue\":([0-9.]+).*,\"datePublished\":\"([^\"]+)");
 
-
     public static final Pattern MOVIE_NAME_AND_DESCRIPTION_ONLY_PATTERN = Pattern.compile("</script><title>([^<]+)</title><meta name=\"description\" content=\"([^\"]+)");
 
     @Autowired
     private ObjectMapper om;
 
-    private final String failure = "Couldn't find the requested movie.";
+    public static final String failure = "Couldn't find the requested movie.";
 
 
     public String searchMovie(String movieName) throws IOException {

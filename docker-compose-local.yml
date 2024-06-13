@@ -1,0 +1,8 @@
+version: "1"
+services:
+  appserver:
+    container_name: imdb-chatbot-server
+    hostname: localhost
+    image: imdb-chatbot
+    ports:
+      - "8080:8080"
